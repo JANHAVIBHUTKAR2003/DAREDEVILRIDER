@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<style>
+    .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%);
+    }
+
+    #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: -60px;
+        left: -130px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+    }
+
+    #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+    }
+
+    .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+    }
+</style>
+
+<body>
+    <nav class=" ">
+        <div class=" row me-0 p-3  " style="background-color: #0E1E2C;">
+            <div class="col-md-3  ">
+
+                <a href="index.html"> <img src="IMAGE/logo.png" height="76" alt=""></a>
+            </div>
+            <div class="col-md-5  p-3" style="margin-top: -10px;">
+                <form class="d-flex w-100 " role="search">
+                    <input class="form-control me-2 p-3 rounded-pill placeholder0" type="search" placeholder="Search"
+                        aria-label="Search">
+
+                </form>
+            </div>
+            <div class="col-md-4   p-3">
+                <div class="mx-auto">
+                    <div class="d-flex align-items-center">
+                        <button data-mdb-ripple-init type="button"
+                            class="btn btn-link  me-2 fs-5 text-white text-decoration-none w-25 border rounded-2">
+                            <a href="login.html" class="text-white text-decoration-none"> Login</a>
+                        </button>
+                        <button data-mdb-ripple-init type="button"
+                            class="btn btn-link  me-2 fs-5 text-white text-decoration-none w-25 border rounded-2">
+                            <a href="register.html" class="text-white text-decoration-none"> Register</a>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg  " style="background-color: #1d2a35;">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " style="background-color: #1d2a35;" id="navbarNavAltMarkup">
+                    <div class="">
+
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link   me-5 text-white fs-5" aria-current="page" href="index.html">Home</a>
+
+
+                        <a class="nav-link text-white me-5 fs-5" href="about.html">About Us</a>
+                        <a class="nav-link text-white me-5 fs-5" href="Contact.html">Contact Us</a>
+                        <a class="nav-link text-white me-5 fs-5" href="pasttour.html">Past Tours</a>
+                        <a class="nav-link text-white me-5 fs-5" href="future.html">Future Tours</a>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <section>
+        <!-- Hero Section -->
+        <section class="hero-section text-center text-white">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1 class="">Looking for joy?</h1>
+                <p>Your trusted trip companion</p>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us py-5" style="background-color: #0E1E2C; color: white;">
+            <div class="container text-center">
+                <h2 style="font-size: 60px; font-weight: 600;">Why Choose Us</h2>
+                <p style="font-size: 35px;">These popular destinations have a lot to offer</p>
+                <div class="row mt-4">
+                    <div class="col-md-4 border border-white p-5">
+                        <div class="icon mb-3 "><i class="fas fa-dollar-sign"></i></div>
+                        <h4 style="font-size: 35px;">Best Price Guarantee</h4>
+                        <p>We offer competitive pricing without compromising quality. Enjoy the best value for your adventure.</p>
+                    </div>
+                    <div class="col-md-4 border border-white p-5">
+                        <div class="icon mb-3"><i class="fas fa-clock"></i></div>
+                        <h4 style="font-size: 35px;">Easy & Quick Booking</h4>
+                        <p>Our streamlined booking process ensures that you can plan your next adventure in just a few clicks.</p>
+                    </div>
+                    <div class="col-md-4 border border-white p-5">
+                        <div class="icon mb-3"><i class="fas fa-headset"></i></div>
+                        <h4 style="font-size: 35px;">Customer Care 24/7</h4>
+                        <p>Our dedicated support team is available around the clock to assist you with any questions or concerns</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about py-5" style="background-color: #0E1E2C; color: white;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 style="font-size: 75px;">About GoTrip.com</h2>
+                        <p style="font-size: 16px;">These popular destinations have a lot to offer</p>
+                        <p style="font-size: 16px;">London is a shining example of a metropolis at the highest peak of
+                            modernity...</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="IMAGE/About.jpg" alt="About Image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="row text-center stats mt-5">
+                    <div class="col-md-3">
+                        <h3 id="destinations" style="font-size: 56px;">4,958</h3>
+                        <p style="font-size: 26px;">Destinations</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 id="properties" style="font-size: 56px;">2,869</h3>
+                        <p style="font-size: 26px;">Total Properties</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 id="customers" style="font-size: 56px;">2M</h3>
+                        <p style="font-size: 26px;">Happy Customers</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3 id="volunteers" style="font-size: 56px;">574,974</h3>
+                        <p style="font-size: 26px;">Our Volunteers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials py-5" style="background-color: #0E1E2C; color: balck;">
+            <div class="container text-center">
+                <h2 style="font-size: 65px;" class="text-white">Overheard from travelers</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4 rounded-5">
+                        <div class="testimonial p-5">
+                            <p style="font-size: 25px; font-weight: 600;">"DareDevilRiders transformed my view of adventure! The guides were knowledgeable, and the routes were stunning."</p>
+                            <p><strong class="fw-bold">Annette Black</strong><br>UX / UI Designer</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial p-5">
+                            <p style="font-size: 25px; font-weight: 600;">"An unforgettable experience! The camaraderie among the riders made every mile memorable."</p>
+                            <p><strong class="fw-bold">Annette Black</strong><br>Travel Blogger</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial p-5">
+                            <p style="font-size: 25px; font-weight: 600;">"From breathtaking views to amazing friendships, this trip was everything I Enjoy alot, All is well I hoped for and more!"</p>
+                            <p><strong class="fw-bold">Annette Black</strong><br>Adventure Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </section>
+    <footer class="text-center text-lg-start  text-white text-muted" style="background-color: #0E1E2C;">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-white">
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="text-white">
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+           
+        </section>
+      
+
+        <!-- Section: Links  -->
+        <section class=" text-white">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4 ">
+                            <img src="IMAGE/logo.png" height="60" alt="">
+                        </h6>
+                       
+                    </div>
+                    
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+      <div class="d-flex justify-content-center">
+        <div>
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+
+
+                    <!-- Twitter -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;"
+                        href="#!" role="button"><i class="bi bi-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;"
+                        href="#!" role="button"><i class="bi bi-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;"
+                        href="#!" role="button"><i class="bi bi-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;"
+                        href="#!" role="button"><i class="bi bi-facebook"></i></a>
+                    <!-- Github -->
+                    <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;"
+                        href="#!" role="button"><i class="bi bi-github"></i></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+        </div>
+      </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+            Design & Developed by @Janhavi Bhutkar
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const destinations = new CountUp('destinations', 4958);
+            const properties = new CountUp('properties', 2869);
+            const customers = new CountUp('customers', 2000000);
+            const volunteers = new CountUp('volunteers', 574974);
+
+            destinations.start();
+            properties.start();
+            customers.start();
+            volunteers.start();
+        });
+    </script>
+
+
+
+</body>
+
+</html>
